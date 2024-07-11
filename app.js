@@ -16,8 +16,13 @@ app.use(express.static(path.join(__dirname, "public")));
 
 io.on("connection", (socket) => {
   socket.on("send-location", (data) => {
-    io.emit("recieve-location", { id: socket._id, ...data });
+    io.emit("recieve-location", { id: socket.id, ...data });
   });
+
+  socket.on("disconnect", () => {
+    io.emit("user-disconnected", socket._id);
+  });
+
   console.log("connected");
 });
 
