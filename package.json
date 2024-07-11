@@ -1,0 +1,31 @@
+{
+  "name": "live-location-tracker",
+  "version": "1.0.0",
+  "description": "live location tracker using express js,node js,socket.io,ejs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "Node",
+    "JS",
+    "Express",
+    "JS",
+    "Socket",
+    "IO"
+  ],
+  "author": "Muhammed Fayaz T S",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2"
+  }
+}
